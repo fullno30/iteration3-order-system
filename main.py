@@ -20,7 +20,10 @@ def main():
     service = OrderService(product_repo, order_repo)
 
     # Create an order (similar to Iteration 2, but using the service)
-    order = service.create_order([ (1, 2), # 2 mugs (2, 1), # 1 scarf])
+    order = service.create_order([ 
+        (1, 2), # 2 mugs 
+        (2, 1), # 1 scarf
+    ])
 
     # Print subtotals (same output style as your Iteration 1)
     for item in order.items:
